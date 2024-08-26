@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "167778209272",
+    "project_id": "flutter-req-2345f",
+    "storage_bucket": "flutter-req-2345f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167778209272:android:b50cb3f3e19fdd015c5a0d",
+        "android_client_info": {
+          "package_name": "com.example.client"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmOYjvRwiaOav0PPig4Uwg98ScKpw1HQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167778209272:android:0480f900476384e15c5a0d",
+        "android_client_info": {
+          "package_name": "com.mush.app.beta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmOYjvRwiaOav0PPig4Uwg98ScKpw1HQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

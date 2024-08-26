@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
-import 'dart:html' as html;
 import '../../auth/blocs/sing_in_bloc/sign_in_bloc.dart';
 
 class BaseScreen extends StatefulWidget {
@@ -18,8 +17,8 @@ class _BaseScreenState extends State<BaseScreen> {
   Widget build(BuildContext context) {
     return BlocListener<SignInBloc, SignInState>(
       listener: (context, state) {
-        if(state is SignOutSuccess) {
-          html.window.location.reload();
+        if (state is SignOutSuccess) {
+          print('SignedOut');
         }
       },
       child: Scaffold(
@@ -44,9 +43,7 @@ class _BaseScreenState extends State<BaseScreen> {
                           child: const Text(
                             'Pizza Admin',
                             style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20
-                            ),
+                                fontWeight: FontWeight.bold, fontSize: 20),
                           ),
                         ),
                         const SizedBox(width: 30),
@@ -57,10 +54,10 @@ class _BaseScreenState extends State<BaseScreen> {
                           child: const Text(
                             'Create Pizza',
                             style: TextStyle(
-                              // fontWeight: FontWeight.w600,
-                              color: Colors.grey
-                              // fontSize: 20
-                            ),
+                                // fontWeight: FontWeight.w600,
+                                color: Colors.grey
+                                // fontSize: 20
+                                ),
                           ),
                         ),
                       ],
@@ -73,13 +70,12 @@ class _BaseScreenState extends State<BaseScreen> {
                         children: [
                           Text(
                             'Logout',
-                            style: TextStyle(
-                            ),
+                            style: TextStyle(),
                           ),
-                          SizedBox(width: 5,),
-                          Icon(
-                            CupertinoIcons.arrow_right_to_line
-                          )
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Icon(CupertinoIcons.arrow_right_to_line)
                         ],
                       ),
                     )
@@ -87,9 +83,7 @@ class _BaseScreenState extends State<BaseScreen> {
                 ),
               ),
             ),
-            Expanded(
-              child: widget.child
-            )
+            Expanded(child: widget.child)
           ],
         ),
       ),

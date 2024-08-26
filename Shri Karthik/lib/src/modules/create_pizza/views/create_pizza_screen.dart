@@ -10,7 +10,7 @@ import 'package:pizza_app_admin/src/modules/create_pizza/blocs/upload_picture_bl
 import 'package:pizza_repository/pizza_repository.dart';
 import '../../../components/my_text_field.dart';
 import '../components/macro.dart';
-import 'dart:html' as html;
+
 
 class CreatePizzaScreen extends StatefulWidget {
   const CreatePizzaScreen({super.key});

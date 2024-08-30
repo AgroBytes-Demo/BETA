@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class VerificationPage extends StatelessWidget {
   @override
@@ -35,6 +36,7 @@ class VerificationPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 // Verification functionality
+                Get.toNamed('/explore');
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor:  Colors.green, // Button color

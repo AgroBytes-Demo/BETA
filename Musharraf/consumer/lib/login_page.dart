@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Get.toNamed('/signup'); // Navigate to sign up page
+                Get.toNamed('/explore'); // Navigate to explore page
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green, // Button color
@@ -56,7 +56,7 @@ class LoginPage extends StatelessWidget {
               ),
               child: Text(
                 'Log in',
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(fontSize: 16,color: Colors.white),
               ),
             ),
             SizedBox(height: 20),

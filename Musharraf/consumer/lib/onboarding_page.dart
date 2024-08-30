@@ -6,55 +6,60 @@ class OnboardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Stack(
         children: [
-          Expanded(
+          // Full-screen image
+          Positioned.fill(
             child: Image.asset(
-              'assets/onboarding_image.png', // Replace with your asset path
-              fit: BoxFit.cover,
+              'assets/onboarding_image.png',
+              fit: BoxFit.cover, // Ensure the image covers the entire screen
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                Text(
-                  'Welcome to our store',
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+          // Centered content near the bottom
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    'Welcome to our store',
+                    style: TextStyle(
+                      fontSize: 24,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(height: 8),
-                Text(
-                  'Get your groceries directly from Farmers',
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: Colors.white70,
+                  SizedBox(height: 8),
+                  Text(
+                    'Get your groceries directly from Farmers',
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white70,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    Get.toNamed('/login'); // Navigate to login page
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green, // Button color
-                    padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8),
+                  SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      Get.toNamed('/login'); // Navigate to login page
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.green, // Button color
+                      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
+                    child: Text(
+                      'Get Started',
+                      style: TextStyle(fontSize: 16, color: Colors.white),
                     ),
                   ),
-                  child: Text(
-                    'Get Started',
-                    style: TextStyle(fontSize: 16),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],

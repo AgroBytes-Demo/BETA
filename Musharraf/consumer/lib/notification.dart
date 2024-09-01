@@ -5,12 +5,14 @@ class NotificationsPage extends StatelessWidget {
   // Dummy notifications data
   final List<Map<String, String>> notifications = [
     {
-      'title': 'Fresh Products Added!',
-      'description': 'Check out the new variety of fresh products in our store.'
-    },
-    {
+      
       'title': 'SIH Shortlisting',
       'description': 'Team Agro Bytes has been shortlisted for Smart India Hackathon.'
+    },
+    {
+      
+      'title': 'Fresh Products Added!',
+      'description': 'Check out the new variety of fresh products in our store.'
     },
     {
       'title': 'Order Shipped',

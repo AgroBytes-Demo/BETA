@@ -17,29 +17,29 @@ class Product {
 // Dummy data for products
 List<Product> products = [
   Product(
-    name: "Bell Pepper Red",
-    imagePath: "assets/images/bell_pepper.png",
+    name: "Moong",
+    imagePath: "assets/moong.png",
     quantity: "10kg",
     price: "₹300",
     cost: 300,
   ),
   Product(
-    name: "Egg Chicken Red",
-    imagePath: "assets/images/egg.png",
+    name: "Rajma",
+    imagePath: "assets/rajma_chawal.png",
     quantity: "500pcs",
     price: "₹1000",
     cost: 1000,
   ),
   Product(
-    name: "Organic Bananas",
-    imagePath: "assets/images/banana.png",
+    name: "Toor Dal",
+    imagePath: "assets/dal1.png",
     quantity: "50kg",
     price: "₹400",
     cost: 400,
   ),
   Product(
-    name: "Ginger",
-    imagePath: "assets/images/ginger.png",
+    name: "Rajma",
+    imagePath: "assets/rajma_chawal.png",
     quantity: "25kg",
     price: "₹300",
     cost: 300,

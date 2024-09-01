@@ -31,7 +31,7 @@ class ProfilePage extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
                 Text(
-                  'Dore Daddy',
+                  'Ramesh',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: 4),

@@ -38,24 +38,40 @@ class LandingPage extends StatelessWidget {
                     ],
                   ),
                   CircleAvatar(
-                    backgroundImage: AssetImage('assets/profile.jpg'), // Example avatar image
+                    backgroundImage: AssetImage(
+                        'assets/profile.jpg'), // Example avatar image
                   ),
                 ],
               ),
               SizedBox(height: 20),
 
-              // Search Box
-              TextField(
-                decoration: InputDecoration(
-                  hintText: 'Search Store',
-                  prefixIcon: Icon(Icons.search, color: Colors.grey),
-                  filled: true,
-                  fillColor: Colors.grey[200],
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(30),
-                    borderSide: BorderSide.none,
+              Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Search Store',
+                        prefixIcon: Icon(Icons.search, color: Colors.grey),
+                        filled: true,
+                        fillColor: Colors.grey[200],
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
+                  SizedBox(
+                      width:
+                          10), // Add spacing between the search box and the icon
+                  IconButton(
+                    icon: Icon(Icons.notifications, color: Colors.grey),
+                    onPressed: () {
+                      Get.to(
+                          NotificationsPage()); // Navigate to the notification page
+                    },
+                  ),
+                ],
               ),
               SizedBox(height: 20),
 
